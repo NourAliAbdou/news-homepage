@@ -6,6 +6,15 @@
       "dom.iterable",
       "esnext"
     ],
+    "import/no-anonymous-default-export": ["error", {
+      "allowArray": false,
+      "allowArrowFunction": false,
+      "allowAnonymousClass": false,
+      "allowAnonymousFunction": false,
+      "allowCallExpression": true, // The true value here is for backward compatibility
+      "allowLiteral": false,
+      "allowObject": true
+    }],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,7 +27,28 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@components": [
+        "./src/components/index.ts"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@constants": [
+        "./src/constants/index.ts"
+      ],
+      "@constants/*": [
+        "./src/constants/*"
+      ],
+      "@styles" : [
+        "./src/styles/index.ts"
+      ],
+      "@styles/*" : [
+        "./src/styles/*"
+      ]
+    },
   },
   "include": [
     "src"
