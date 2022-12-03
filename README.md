@@ -1,4 +1,6 @@
 # UI Challenge
+frontend challenge.
+
 responsive [home page](https://news-homepage-ui.vercel.app)
 
 challenge on [frontendmentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub/news-homepage-ZFBbp0NA-v)
